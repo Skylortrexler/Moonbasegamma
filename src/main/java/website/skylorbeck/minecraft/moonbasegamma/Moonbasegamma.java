@@ -5,12 +5,11 @@ import net.fabricmc.api.ModInitializer;
 public class Moonbasegamma implements ModInitializer {
     @Override
     public void onInitialize() {
-
+            Registrar.Register();
     }
 }
 //todo
 // invisible fluid
-// diorite reskin
 // iron armor reskin
 // horse armor reskin
 // creeper reskin
