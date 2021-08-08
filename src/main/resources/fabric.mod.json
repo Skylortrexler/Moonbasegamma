@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "moonbasegamma",
+  "version": "1.0.0",
+  "name": "Moonbasegamma",
+  "description": "A moon mod",
+  "authors": [
+    "Skylor Beck"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/moonbasegamma/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "website.skylorbeck.minecraft.moonbasegamma.client.MoonbasegammaClient"
+    ],
+    "main": [
+      "website.skylorbeck.minecraft.moonbasegamma.Moonbasegamma"
+    ]
+  },
+  "mixins": [
+    "moonbasegamma.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
