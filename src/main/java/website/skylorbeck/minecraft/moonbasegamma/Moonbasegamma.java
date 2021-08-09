@@ -10,7 +10,6 @@ public class Moonbasegamma implements ModInitializer {
 }
 //todo
 // horse armor reskin 1-4 hours
-// skeleton reskin 1-2
 // crossbow reskin into raygun 1-2
 // skeletal horsemen reskin - skeleton horse, skeleton rider 2-6
 // netherrack, bastion blocks reskinned 2-6
