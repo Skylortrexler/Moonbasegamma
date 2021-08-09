@@ -1,6 +1,7 @@
 package website.skylorbeck.minecraft.moonbasegamma.mixin;
 
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.tag.Tag;
 import net.minecraft.util.math.BlockPos;
@@ -15,6 +16,9 @@ public class LivingEntityMixin {
     @Redirect(at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;isSubmergedIn(Lnet/minecraft/tag/Tag;)Z"), method = "baseTick")
     public boolean injected(LivingEntity livingEntity, Tag<Fluid> fluidTag) {
         BlockPos blockPos = new BlockPos(((LivingEntity) (Object) this).getX(), ((LivingEntity) (Object) this).getEyeY(), ((LivingEntity) (Object) this).getZ());
-        return livingEntity.isSubmergedIn(fluidTag) || ((LivingEntity) (Object) this).world.getBlockState(blockPos).isOf(Registrar.spaceblock);
+        if (livingEntity instanceof PlayerEntity){
+            return livingEntity.isSubmergedIn(fluidTag) || ((LivingEntity) (Object) this).world.getBlockState(blockPos).isOf(Registrar.spaceblock);
+        }
+        return livingEntity.isSubmergedIn(fluidTag);
     }
 }

@@ -11,8 +11,4 @@ public class Moonbasegamma implements ModInitializer {
 //todo
 // horse armor reskin 1-4 hours
 // skeletal horsemen reskin - skeleton horse, skeleton rider 2-6
-// netherrack, bastion blocks reskinned 2-6
 // end dragon reskin 6-10
-// endstone reskin
-// end crystal reskin
-// moon reskin
