@@ -4,7 +4,6 @@
   "package": "website.skylorbeck.minecraft.moonbasegamma.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "EntityAccessor",
     "LivingEntityMixin"
   ],
   "client": [

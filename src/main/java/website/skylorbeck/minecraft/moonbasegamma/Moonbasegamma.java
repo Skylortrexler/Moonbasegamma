@@ -9,8 +9,6 @@ public class Moonbasegamma implements ModInitializer {
     }
 }
 //todo
-// invisible fluid
-// iron armor reskin
 // horse armor reskin
 // creeper reskin
 // skeleton reskin
@@ -23,3 +21,4 @@ public class Moonbasegamma implements ModInitializer {
 // end dragon reskin
 // endstone reskin
 // end crystal reskin
+// moon reskin
