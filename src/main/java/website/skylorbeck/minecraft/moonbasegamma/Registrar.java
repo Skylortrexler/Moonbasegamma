@@ -19,6 +19,5 @@ public class Registrar {
     public static void Register(){
         spaceblock = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "spaceblock"), new AirBlock(FabricBlockSettings.copy(Blocks.WATER).dropsNothing().noCollision()){});
         spaceblockitem = Registry.register(Registry.ITEM,new Identifier(MOD_ID, "spaceblockitem"), new BlockItem(spaceblock,new FabricItemSettings().group(ItemGroup.MISC)));
-
     }
 }

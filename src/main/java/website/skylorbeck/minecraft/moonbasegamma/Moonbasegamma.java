@@ -10,11 +10,7 @@ public class Moonbasegamma implements ModInitializer {
 }
 //todo
 // horse armor reskin
-// creeper reskin
 // skeleton reskin
-// zombie reskin
-// enderman reskin
-// pigman reskin
 // crossbow reskin into raygun
 // skeletal horsemen reskin - skeleton horse, skeleton rider
 // netherrack, bastion blocks reskinned
@@ -22,3 +18,4 @@ public class Moonbasegamma implements ModInitializer {
 // endstone reskin
 // end crystal reskin
 // moon reskin
+// if you have time, add antennae to everything
