@@ -81,29 +81,115 @@ public class EntityModelsMixin {
     private static TexturedModelData injectedEnderDragon() {
         ModelData modelData = new ModelData();
         ModelPartData modelPartData = modelData.getRoot();
-        ModelPartData modelPartData2 = modelPartData.addChild(EntityModelPartNames.HEAD, ModelPartBuilder.create().cuboid("upperlip", -6.0F, -1.0F, -24.0F, 12, 5, 16, 176, 44).cuboid("upperhead", -8.0F, -8.0F, -10.0F, 16, 16, 16, 112, 30).mirrored().cuboid("scale", -5.0F, -12.0F, -4.0F, 2, 4, 6, 0, 0).cuboid("nostril", -5.0F, -3.0F, -22.0F, 2, 2, 4, 112, 0).mirrored().cuboid("scale", 3.0F, -12.0F, -4.0F, 2, 4, 6, 0, 0).cuboid("nostril", 3.0F, -3.0F, -22.0F, 2, 2, 4, 112, 0), ModelTransform.NONE);
-        modelPartData2.addChild(EntityModelPartNames.JAW, ModelPartBuilder.create().cuboid(EntityModelPartNames.JAW, -6.0F, 0.0F, -16.0F, 12, 4, 16, 176, 65), ModelTransform.pivot(0.0F, 4.0F, -8.0F));
-        modelPartData.addChild(EntityModelPartNames.NECK, ModelPartBuilder.create().cuboid("box", -5.0F, -5.0F, -5.0F, 10, 10, 10, 192, 104).cuboid("scale", -1.0F, -9.0F, -3.0F, 2, 4, 6, 48, 0), ModelTransform.NONE);
-        modelPartData.addChild(EntityModelPartNames.BODY, ModelPartBuilder.create().cuboid(EntityModelPartNames.BODY, -12.0F, 0.0F, -16.0F, 24, 24, 64, 0, 0).cuboid("scale", -1.0F, -6.0F, -10.0F, 2, 6, 12, 220, 53).cuboid("scale", -1.0F, -6.0F, 10.0F, 2, 6, 12, 220, 53).cuboid("scale", -1.0F, -6.0F, 30.0F, 2, 6, 12, 220, 53), ModelTransform.pivot(0.0F, 4.0F, 8.0F));
-        ModelPartData modelPartData3 = modelPartData.addChild(EntityModelPartNames.LEFT_WING, ModelPartBuilder.create().mirrored().cuboid("bone", 0.0F, -4.0F, -4.0F, 56, 8, 8, 112, 88).cuboid("skin", 0.0F, 0.0F, 2.0F, 56, 0, 56, -56, 88), ModelTransform.pivot(12.0F, 5.0F, 2.0F));
-        modelPartData3.addChild(EntityModelPartNames.LEFT_WING_TIP, ModelPartBuilder.create().mirrored().cuboid("bone", 0.0F, -2.0F, -2.0F, 56, 4, 4, 112, 136).cuboid("skin", 0.0F, 0.0F, 2.0F, 56, 0, 56, -56, 144), ModelTransform.pivot(56.0F, 0.0F, 0.0F));
-        ModelPartData modelPartData4 = modelPartData.addChild(EntityModelPartNames.LEFT_FRONT_LEG, ModelPartBuilder.create().cuboid("main", -4.0F, -4.0F, -4.0F, 8, 24, 8, 112, 104), ModelTransform.pivot(12.0F, 20.0F, 2.0F));
-        ModelPartData modelPartData5 = modelPartData4.addChild(EntityModelPartNames.LEFT_FRONT_LEG_TIP, ModelPartBuilder.create().cuboid("main", -3.0F, -1.0F, -3.0F, 6, 24, 6, 226, 138), ModelTransform.pivot(0.0F, 20.0F, -1.0F));
-        modelPartData5.addChild(EntityModelPartNames.LEFT_FRONT_FOOT, ModelPartBuilder.create().cuboid("main", -4.0F, 0.0F, -12.0F, 8, 4, 16, 144, 104), ModelTransform.pivot(0.0F, 23.0F, 0.0F));
-        ModelPartData modelPartData6 = modelPartData.addChild(EntityModelPartNames.LEFT_HIND_LEG, ModelPartBuilder.create().cuboid("main", -8.0F, -4.0F, -8.0F, 16, 32, 16, 0, 0), ModelTransform.pivot(16.0F, 16.0F, 42.0F));
-        ModelPartData modelPartData7 = modelPartData6.addChild(EntityModelPartNames.LEFT_HIND_LEG_TIP, ModelPartBuilder.create().cuboid("main", -6.0F, -2.0F, 0.0F, 12, 32, 12, 196, 0), ModelTransform.pivot(0.0F, 32.0F, -4.0F));
-        modelPartData7.addChild(EntityModelPartNames.LEFT_HIND_FOOT, ModelPartBuilder.create().cuboid("main", -9.0F, 0.0F, -20.0F, 18, 6, 24, 112, 0), ModelTransform.pivot(0.0F, 31.0F, 4.0F));
-        ModelPartData modelPartData8 = modelPartData.addChild(EntityModelPartNames.RIGHT_WING, ModelPartBuilder.create().cuboid("bone", -56.0F, -4.0F, -4.0F, 56, 8, 8, 112, 88).cuboid("skin", -56.0F, 0.0F, 2.0F, 56, 0, 56, -56, 88), ModelTransform.pivot(-12.0F, 5.0F, 2.0F));
-        modelPartData8.addChild(EntityModelPartNames.RIGHT_WING_TIP, ModelPartBuilder.create().cuboid("bone", -56.0F, -2.0F, -2.0F, 56, 4, 4, 112, 136).cuboid("skin", -56.0F, 0.0F, 2.0F, 56, 0, 56, -56, 144), ModelTransform.pivot(-56.0F, 0.0F, 0.0F));
-        ModelPartData modelPartData9 = modelPartData.addChild(EntityModelPartNames.RIGHT_FRONT_LEG, ModelPartBuilder.create().cuboid("main", -4.0F, -4.0F, -4.0F, 8, 24, 8, 112, 104), ModelTransform.pivot(-12.0F, 20.0F, 2.0F));
-        ModelPartData modelPartData10 = modelPartData9.addChild(EntityModelPartNames.RIGHT_FRONT_LEG_TIP, ModelPartBuilder.create().cuboid("main", -3.0F, -1.0F, -3.0F, 6, 24, 6, 226, 138), ModelTransform.pivot(0.0F, 20.0F, -1.0F));
-        modelPartData10.addChild(EntityModelPartNames.RIGHT_FRONT_FOOT, ModelPartBuilder.create().cuboid("main", -4.0F, 0.0F, -12.0F, 8, 4, 16, 144, 104), ModelTransform.pivot(0.0F, 23.0F, 0.0F));
-        ModelPartData modelPartData11 = modelPartData.addChild(EntityModelPartNames.RIGHT_HIND_LEG, ModelPartBuilder.create().cuboid("main", -8.0F, -4.0F, -8.0F, 16, 32, 16, 0, 0), ModelTransform.pivot(-16.0F, 16.0F, 42.0F));
-        ModelPartData modelPartData12 = modelPartData11.addChild(EntityModelPartNames.RIGHT_HIND_LEG_TIP, ModelPartBuilder.create().cuboid("main", -6.0F, -2.0F, 0.0F, 12, 32, 12, 196, 0), ModelTransform.pivot(0.0F, 32.0F, -4.0F));
-        modelPartData12.addChild(EntityModelPartNames.RIGHT_HIND_FOOT, ModelPartBuilder.create().cuboid("main", -9.0F, 0.0F, -20.0F, 18, 6, 24, 112, 0), ModelTransform.pivot(0.0F, 31.0F, 4.0F));
-        ModelPartBuilder modelPartBuilder = ModelPartBuilder.create().uv(16,0).cuboid(0.0f, 0.0F, 0.0F, 2.0F, 10.0F, 2.0F);
-        modelPartData.getChild(EntityModelPartNames.HEAD).addChild(EntityModelPartNames.LEFT_FIN, modelPartBuilder, ModelTransform.pivot(-6.0F, -18f, -8.0F));
-        modelPartData.getChild(EntityModelPartNames.HEAD).addChild(EntityModelPartNames.RIGHT_FIN, modelPartBuilder, ModelTransform.pivot(4.0F, -18f, -8.0F));
+        ModelPartData modelPartData2 = modelPartData.addChild(EntityModelPartNames.HEAD,
+                ModelPartBuilder.create().cuboid("upperlip", -6.0F, -1.0F, -24.0F, 12, 5, 16, 176, 44)
+                        .cuboid("upperhead", -8.0F, -8.0F, -10.0F, 16, 16, 16, 112, 30)
+                        .cuboid("scale", -1.0F, -21.0F, -3.0F, 2, 16, 6, 112,144)
+                        .cuboid("nostril", -5.0F, -3.0F, -22.0F, 2, 2, 4, 112, 0)
+                        .cuboid("nostril", 3.0F, -3.0F, -22.0F, 2, 2, 4, 112, 0),
+                ModelTransform.NONE);
+
+        modelPartData2.addChild(EntityModelPartNames.JAW,
+                ModelPartBuilder.create()
+                        .cuboid(EntityModelPartNames.JAW, -6.0F, 0.0F, -16.0F, 12, 4, 16, 176, 65),
+                ModelTransform.pivot(0.0F, 4.0F, -8.0F));
+
+        modelPartData.addChild(EntityModelPartNames.NECK,
+                ModelPartBuilder.create()
+                        .cuboid("box", -5.0F, -5.0F, -5.0F, 10, 10, 10, 192, 104)
+                        .cuboid("scale", -1.0F, -21.0F, -3.0F, 2, 16, 6, 112,144),
+                ModelTransform.NONE);
+
+        modelPartData.addChild(EntityModelPartNames.BODY,
+                ModelPartBuilder.create()
+                        .cuboid(EntityModelPartNames.BODY, -12.0F, 0.0F, -16.0F, 24, 24, 64, 0, 0)
+//                        .cuboid("scale", -4.0F, -10.0F, -10.0F, 2, 12, 8, 226, 57)
+                        .cuboid("scale", -4.0F, -16.0F, -10.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", 2.0F, -16.0F, -10.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", -4.0F, -16.0F, 0.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", 2.0F, -16.0F, 0.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", -4.0F, -16.0F, 10.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", 2.0F, -16.0F, 10.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", -4.0F, -16.0F, 20.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", 2.0F, -16.0F, 20.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", -4.0F, -16.0F, 30.0F, 2, 16, 6, 112,144)
+                        .cuboid("scale", 2.0F, -16.0F, 30.0F, 2, 16, 6, 112,144),
+                ModelTransform.pivot(0.0F, 4.0F, 8.0F));
+
+        ModelPartData modelPartData3 = modelPartData.addChild(EntityModelPartNames.LEFT_WING,
+                ModelPartBuilder.create()
+                .mirrored().cuboid("bone", 0.0F, -4.0F, -4.0F, 56, 8, 8, 112, 88)
+                .cuboid("skin", 0.0F, 0.0F, 2.0F, 56, 0, 56, -56, 88),
+                ModelTransform.pivot(12.0F, 5.0F, 2.0F));
+
+        modelPartData3.addChild(EntityModelPartNames.LEFT_WING_TIP,
+                ModelPartBuilder.create()
+                        .mirrored().cuboid("bone", 0.0F, -2.0F, -2.0F, 56, 4, 4, 112, 136)
+                        .cuboid("skin", 0.0F, 0.0F, 2.0F, 56, 0, 56, -56, 144),
+                ModelTransform.pivot(56.0F, 0.0F, 0.0F));
+
+        ModelPartData modelPartData4 = modelPartData.addChild(EntityModelPartNames.LEFT_FRONT_LEG,
+                ModelPartBuilder.create()
+                .cuboid("main", -4.0F, -4.0F, -4.0F, 8, 24, 8, 112, 104),
+                ModelTransform.pivot(12.0F, 20.0F, 2.0F));
+
+        ModelPartData modelPartData5 = modelPartData4.addChild(EntityModelPartNames.LEFT_FRONT_LEG_TIP,
+                ModelPartBuilder.create()
+                .cuboid("main", -3.0F, -1.0F, -3.0F, 6, 24, 6, 226, 138),
+                ModelTransform.pivot(0.0F, 20.0F, -1.0F));
+
+        modelPartData5.addChild(EntityModelPartNames.LEFT_FRONT_FOOT,
+                ModelPartBuilder.create().cuboid("main", -4.0F, 0.0F, -12.0F, 8, 4, 16, 144, 104),
+                ModelTransform.pivot(0.0F, 23.0F, 0.0F));
+
+        ModelPartData modelPartData6 = modelPartData.addChild(EntityModelPartNames.LEFT_HIND_LEG,
+                ModelPartBuilder.create().cuboid("main", -8.0F, -4.0F, -8.0F, 16, 32, 16, 0, 0),
+                ModelTransform.pivot(16.0F, 16.0F, 42.0F));
+
+        ModelPartData modelPartData7 = modelPartData6.addChild(EntityModelPartNames.LEFT_HIND_LEG_TIP,
+                ModelPartBuilder.create().cuboid("main", -6.0F, -2.0F, 0.0F, 12, 32, 12, 196, 0),
+                ModelTransform.pivot(0.0F, 32.0F, -4.0F));
+
+        modelPartData7.addChild(EntityModelPartNames.LEFT_HIND_FOOT,
+                ModelPartBuilder.create().cuboid("main", -9.0F, 0.0F, -20.0F, 18, 6, 24, 112, 0),
+                ModelTransform.pivot(0.0F, 31.0F, 4.0F));
+
+        ModelPartData modelPartData8 = modelPartData.addChild(EntityModelPartNames.RIGHT_WING,
+                ModelPartBuilder.create().cuboid("bone", -56.0F, -4.0F, -4.0F, 56, 8, 8, 112, 88)
+                        .cuboid("skin", -56.0F, 0.0F, 2.0F, 56, 0, 56, -56, 88),
+                ModelTransform.pivot(-12.0F, 5.0F, 2.0F));
+
+        modelPartData8.addChild(EntityModelPartNames.RIGHT_WING_TIP,
+                ModelPartBuilder.create().cuboid("bone", -56.0F, -2.0F, -2.0F, 56, 4, 4, 112, 136)
+                        .cuboid("skin", -56.0F, 0.0F, 2.0F, 56, 0, 56, -56, 144),
+                ModelTransform.pivot(-56.0F, 0.0F, 0.0F));
+
+        ModelPartData modelPartData9 = modelPartData.addChild(EntityModelPartNames.RIGHT_FRONT_LEG,
+                ModelPartBuilder.create().cuboid("main", -4.0F, -4.0F, -4.0F, 8, 24, 8, 112, 104),
+                ModelTransform.pivot(-12.0F, 20.0F, 2.0F));
+
+        ModelPartData modelPartData10 = modelPartData9.addChild(EntityModelPartNames.RIGHT_FRONT_LEG_TIP,
+                ModelPartBuilder.create().cuboid("main", -3.0F, -1.0F, -3.0F, 6, 24, 6, 226, 138),
+                ModelTransform.pivot(0.0F, 20.0F, -1.0F));
+
+        modelPartData10.addChild(EntityModelPartNames.RIGHT_FRONT_FOOT,
+                ModelPartBuilder.create().cuboid("main", -4.0F, 0.0F, -12.0F, 8, 4, 16, 144, 104),
+                ModelTransform.pivot(0.0F, 23.0F, 0.0F));
+
+        ModelPartData modelPartData11 = modelPartData.addChild(EntityModelPartNames.RIGHT_HIND_LEG,
+                ModelPartBuilder.create().cuboid("main", -8.0F, -4.0F, -8.0F, 16, 32, 16, 0, 0),
+                ModelTransform.pivot(-16.0F, 16.0F, 42.0F));
+
+        ModelPartData modelPartData12 = modelPartData11.addChild(EntityModelPartNames.RIGHT_HIND_LEG_TIP,
+                ModelPartBuilder.create().cuboid("main", -6.0F, -2.0F, 0.0F, 12, 32, 12, 196, 0),
+                ModelTransform.pivot(0.0F, 32.0F, -4.0F));
+        modelPartData12.addChild(EntityModelPartNames.RIGHT_HIND_FOOT,
+                ModelPartBuilder.create().cuboid("main", -9.0F, 0.0F, -20.0F, 18, 6, 24, 112, 0),
+                ModelTransform.pivot(0.0F, 31.0F, 4.0F));
+
+        ModelPartBuilder modelPartBuilder = ModelPartBuilder.create().uv(16, 0).cuboid(0.0f, 0.0F, 0.0F, 2.0F, 20.0F, 2.0F);
+        modelPartData.getChild(EntityModelPartNames.HEAD).addChild(EntityModelPartNames.LEFT_FIN, modelPartBuilder, ModelTransform.pivot(-6.0F, -28f, -8.0F));
+        modelPartData.getChild(EntityModelPartNames.HEAD).addChild(EntityModelPartNames.RIGHT_FIN, modelPartBuilder, ModelTransform.pivot(4.0F, -28f, -8.0F));
         return TexturedModelData.of(modelData, 256, 256);
     }
     @Redirect(at = @At(value = "INVOKE",target = "Lnet/minecraft/client/render/entity/model/BipedEntityModel;getModelData(Lnet/minecraft/client/model/Dilation;F)Lnet/minecraft/client/model/ModelData;"), method = "getModels")
